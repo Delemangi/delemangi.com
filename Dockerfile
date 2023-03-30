@@ -1,0 +1,12 @@
+ARG PLATFORM="linux/amd64"
+
+FROM --platform=${PLATFORM} node:19-alpine
+
+WORKDIR /app
+
+COPY package*.json .
+RUN npm install
+
+COPY . .
+
+CMD [ "npm", "run", "start" ]
