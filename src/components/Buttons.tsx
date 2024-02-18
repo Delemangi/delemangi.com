@@ -1,7 +1,8 @@
 
-import { IconButton, Popover, Typography } from "@mui/material";
+import { IconButton, Popover, Tooltip, Typography } from "@mui/material";
 import { MouseEvent, useState } from "react";
-import { SiDiscord, SiGithub, SiGmail, SiLinkedin, SiSteam } from "react-icons/si";
+import { BiSolidEnvelope } from "react-icons/bi";
+import { SiDiscord, SiGithub, SiLinkedin, SiSteam } from "react-icons/si";
 import RowContainer from "./RowContainer";
 
 const Buttons = () => {
@@ -14,13 +15,17 @@ const Buttons = () => {
 
   return (
     <RowContainer sx={{ animation: 'fadeInMoveUp 1.5s both' }}>
-      <IconButton href="mailto:milev.stefan@gmail.com">
-        <SiGmail />
-      </IconButton>
+      <Tooltip title="Mail">
+        <IconButton href="mailto:milev.stefan@gmail.com">
+          <BiSolidEnvelope />
+        </IconButton>
+      </Tooltip>
 
-      <IconButton onClick={handleDiscordOnClick}>
-        <SiDiscord />
-      </IconButton>
+      <Tooltip title="Discord">
+        <IconButton onClick={handleDiscordOnClick}>
+          <SiDiscord />
+        </IconButton>
+        </Tooltip>
       <Popover
         open={Boolean(anchorElement)}
         anchorEl={anchorElement}
@@ -31,17 +36,23 @@ const Buttons = () => {
         <Typography margin={0.5}>Copied!</Typography>
       </Popover>
 
-      <IconButton href="https://github.com/Delemangi/" target="_blank">
-        <SiGithub />
-      </IconButton>
+      <Tooltip title="GitHub">
+        <IconButton href="https://github.com/Delemangi/" target="_blank">
+          <SiGithub />
+        </IconButton>
+      </Tooltip>
 
-      <IconButton href="https://steamcommunity.com/id/delemangi/" target="_blank">
-        <SiSteam />
-      </IconButton>
+      <Tooltip title="Steam">
+        <IconButton href="https://steamcommunity.com/id/delemangi/" target="_blank">
+          <SiSteam />
+        </IconButton>
+      </Tooltip>
 
-      <IconButton href="https://www.linkedin.com/in/stefan-milev/" target="_blank">
-        <SiLinkedin />
-      </IconButton>
+      <Tooltip title="LinkedIn">
+        <IconButton href="https://www.linkedin.com/in/stefan-milev/" target="_blank">
+          <SiLinkedin />
+        </IconButton>
+      </Tooltip>
     </RowContainer>
   )
 };
