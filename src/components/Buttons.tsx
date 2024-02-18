@@ -1,7 +1,7 @@
 
 import { IconButton, Popover, Typography } from "@mui/material";
 import { MouseEvent, useState } from "react";
-import { SiDiscord, SiGithub, SiGmail, SiSteam } from "react-icons/si";
+import { SiDiscord, SiGithub, SiGmail, SiLinkedin, SiSteam } from "react-icons/si";
 import RowContainer from "./RowContainer";
 
 const Buttons = () => {
@@ -37,6 +37,10 @@ const Buttons = () => {
 
       <IconButton href="https://steamcommunity.com/id/delemangi/" target="_blank">
         <SiSteam />
+      </IconButton>
+
+      <IconButton href="https://www.linkedin.com/in/stefan-milev/" target="_blank">
+        <SiLinkedin />
       </IconButton>
     </RowContainer>
   )
