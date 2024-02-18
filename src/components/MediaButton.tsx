@@ -1,13 +1,14 @@
 import { IconButton, IconButtonProps } from "@mui/material";
+import { forwardRef } from "react";
 
 type Props = IconButtonProps & {
   href?: string;
 };
 
-const MediaButton = ({ children, href, ...props }: Props) => {
+const MediaButton = forwardRef(({ children, href, ...props }: Props, ref) => {
   return (
     // @ts-expect-error the href prop is causing TS problems
-    <IconButton href={href} target="_blank" sx={{
+    <IconButton ref={ref} href={href} target="_blank" sx={{
       color: "primary",
       "&:hover": {
         color: "#7289da"
@@ -16,6 +17,6 @@ const MediaButton = ({ children, href, ...props }: Props) => {
       {children}
     </IconButton>
   );
-};
+});
 
 export default MediaButton;
