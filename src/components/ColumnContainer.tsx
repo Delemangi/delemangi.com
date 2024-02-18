@@ -2,7 +2,7 @@ import { Container, styled } from "@mui/material";
 
 const ColumnContainer = styled(Container)({
   width: "100%",
-  height: "95%",
+  height: "94%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
