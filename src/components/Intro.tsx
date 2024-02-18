@@ -8,7 +8,7 @@ const Intro = () => {
       <Typography fontSize={16}>Software Engineer @ <Link href="https://codechem.com" target="_blank">CodeChem</Link></Typography>
       <Typography fontSize={16}>Computer Science Student @ <Link href="https://finki.ukim.mk" target="_blank">FCSE</Link></Typography>
     </Column>
-  )
+  );
 };
 
 export default Intro;

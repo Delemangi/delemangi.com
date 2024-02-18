@@ -1,8 +1,9 @@
 
-import { IconButton, Popover, Tooltip, Typography } from "@mui/material";
+import { Popover, Tooltip, Typography } from "@mui/material";
 import { MouseEvent, useState } from "react";
 import { BiSolidEnvelope } from "react-icons/bi";
 import { SiDiscord, SiGithub, SiLinkedin, SiSteam } from "react-icons/si";
+import MediaButton from "./MediaButton";
 import RowContainer from "./RowContainer";
 
 const Buttons = () => {
@@ -16,15 +17,15 @@ const Buttons = () => {
   return (
     <RowContainer sx={{ animation: "fadeInMoveUp 1.5s ease-in-out both" }}>
       <Tooltip title="Mail">
-        <IconButton href="mailto:milev.stefan@gmail.com">
+        <MediaButton href="mailto:milev.stefan@gmail.com">
           <BiSolidEnvelope />
-        </IconButton>
+        </MediaButton>
       </Tooltip>
 
       <Tooltip title="Discord">
-        <IconButton onClick={handleDiscordOnClick}>
+        <MediaButton onClick={handleDiscordOnClick}>
           <SiDiscord />
-        </IconButton>
+        </MediaButton>
         </Tooltip>
       <Popover
         open={Boolean(anchorElement)}
@@ -37,24 +38,24 @@ const Buttons = () => {
       </Popover>
 
       <Tooltip title="GitHub">
-        <IconButton href="https://github.com/Delemangi/" target="_blank">
+        <MediaButton href="https://github.com/Delemangi/">
           <SiGithub />
-        </IconButton>
+        </MediaButton>
       </Tooltip>
 
       <Tooltip title="Steam">
-        <IconButton href="https://steamcommunity.com/id/delemangi/" target="_blank">
+        <MediaButton href="https://steamcommunity.com/id/delemangi/">
           <SiSteam />
-        </IconButton>
+        </MediaButton>
       </Tooltip>
 
       <Tooltip title="LinkedIn">
-        <IconButton href="https://www.linkedin.com/in/stefan-milev/" target="_blank">
+        <MediaButton href="https://www.linkedin.com/in/stefan-milev/">
           <SiLinkedin />
-        </IconButton>
+        </MediaButton>
       </Tooltip>
     </RowContainer>
-  )
+  );
 };
 
 export default Buttons;
