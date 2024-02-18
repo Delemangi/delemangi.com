@@ -14,7 +14,7 @@ const Buttons = () => {
   }
 
   return (
-    <RowContainer sx={{ animation: "fadeInMoveUp 1.5s both" }}>
+    <RowContainer sx={{ animation: "fadeInMoveUp 1.5s ease-in-out both" }}>
       <Tooltip title="Mail">
         <IconButton href="mailto:milev.stefan@gmail.com">
           <BiSolidEnvelope />

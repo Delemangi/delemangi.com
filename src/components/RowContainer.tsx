@@ -1,6 +1,6 @@
-import { Box, styled } from "@mui/material";
+import { Container, styled } from "@mui/material";
 
-const RowContainer = styled(Box)({
+const RowContainer = styled(Container)({
   width: "100%",
   height: "33%",
   display: "flex",

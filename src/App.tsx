@@ -1,5 +1,6 @@
-import { ThemeProvider } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
 import Background from "./components/Background";
+import Bottom from "./components/Bottom";
 import Buttons from "./components/Buttons";
 import ColumnBox from "./components/ColumnBox";
 import ColumnContainer from "./components/ColumnContainer";
@@ -22,10 +23,13 @@ const App = () => {
             <Buttons />
             <HorizontalDivider />
           </ColumnBox>
-          <ColumnBox>
+          <Box>
             <Description />
-          </ColumnBox>
+          </Box>
         </ColumnContainer>
+        <Box>
+          <Bottom />
+        </Box>
       </Background>
     </ThemeProvider>
   );
