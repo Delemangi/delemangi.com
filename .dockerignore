@@ -1,0 +1,23 @@
+# Node
+node_modules
+
+# Output
+dist
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.gitignore
+.gitattributes
+
+# Linters
+.eslintrc
+.hintrc
+
+# GitHub
+.github
+README.md
+LICENSE

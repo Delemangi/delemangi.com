@@ -1,12 +1,10 @@
-ARG PLATFORM="linux/amd64"
-
-FROM --platform=${PLATFORM} node:20-alpine
-
+FROM --platform=${BUILDPLATFORM} node:20-alpine
 WORKDIR /app
 
-COPY package*.json .
-RUN npm install
+COPY package.json package-lock.json ./
+RUN npm i --ignore-scripts
 
-COPY . .
+COPY . ./
+RUN npm run build
 
 CMD [ "npm", "run", "start" ]
