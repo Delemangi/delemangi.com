@@ -1,6 +1,7 @@
-import { Box, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import Background from "./components/Background";
 import Buttons from "./components/Buttons";
+import ColumnBox from "./components/ColumnBox";
 import ColumnContainer from "./components/ColumnContainer";
 import Description from "./components/Description";
 import HorizontalDivider from "./components/HorizontalDivider";
@@ -16,18 +17,14 @@ const App = () => {
           maxWidth: "50%",
           margin: "auto"
         }}>
-          <Box sx={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1rem"
-          }}>
+          <ColumnBox>
             <Intro />
             <Buttons />
             <HorizontalDivider />
-          </Box>
-          <Box>
+          </ColumnBox>
+          <ColumnBox>
             <Description />
-          </Box>
+          </ColumnBox>
         </ColumnContainer>
       </Background>
     </ThemeProvider>
