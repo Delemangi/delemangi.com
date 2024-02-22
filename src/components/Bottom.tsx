@@ -13,7 +13,7 @@ const Bottom = () => {
         margin: 0
       }} />
       <Typography variant="body2" color="textSecondary" align="center">
-        Delemangi {new Date().getFullYear()}. Source code available <Link href="https://github.com/Delemangi/delemangi.com" target="_blank">here</Link>. License: MIT.
+        Delemangi {new Date().getFullYear()}. <Link href="https://github.com/Delemangi/delemangi.com" target="_blank">Source code</Link>. License: MIT.
       </Typography>
     </RowContainer>
   );
