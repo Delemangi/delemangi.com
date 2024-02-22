@@ -11,7 +11,7 @@ const MediaButton = forwardRef(({ children, href, ...props }: Props, ref) => {
     <IconButton ref={ref} href={href} target="_blank" sx={{
       color: "primary",
       "&:hover": {
-        color: "#7289da"
+        color: "#3bdba3"
       }
     }} {...props}>
       {children}

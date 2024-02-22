@@ -7,7 +7,7 @@ export const theme = createTheme({
   components:{
     MuiLink: {
       defaultProps: {
-        color: "#27d699"
+        color: "#3bdba3"
       }
     }
   }
