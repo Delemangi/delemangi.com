@@ -1,3 +1,18 @@
 # Delemangi
 
-The source code for <https://delemangi.com>
+This is my personal homepage, which can be found [here](https://delemangi.com). It uses React and Material UI.
+
+## Quick Setup
+
+1. Install Docker
+2. Grab the `docker-compose.prod.yaml` file from the repository
+3. Run `docker compose up -d`
+
+## Installation
+
+1. Clone the repository: `git clone git@github.com:Delemangi/delemangi.com.git` (or `https://github.com/Delemangi/delemangi.com.git`)
+2. Install dependencies: `npm i`
+
+## Running
+
+You can either run `npm run dev` to start a development server, or `npm run build` and `npm run preview` to build and deploy a server running the application, or check the quick setup from above to run it inside Docker painlessly.
