@@ -1,0 +1,36 @@
+{
+  "env": {
+    "es2022": true,
+    "node": true
+  },
+  "extends": [
+    "canonical/auto"
+  ],
+  "ignorePatterns": [
+    "vite.config.ts"
+  ],
+  "overrides": [
+    {
+      "extends": [
+        "canonical/module",
+        "canonical/typescript-type-checking",
+        "canonical/zod"
+      ],
+      "files": "*.ts",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    },
+    {
+      "extends": [
+        "canonical/browser",
+        "canonical/jsx-a11y",
+        "canonical/typescript-type-checking"
+      ],
+      "files": "*.tsx",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ]
+}
