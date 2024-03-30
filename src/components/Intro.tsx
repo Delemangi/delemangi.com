@@ -1,12 +1,28 @@
-import { Link, Typography } from "@mui/material";
-import Column from "./Column";
+import Column from './Column';
+import { Link, Typography } from '@mui/material';
 
 const Intro = () => {
   return (
-    <Column sx={{ animation: "fadeIn 1.5s ease-in-out both" }}>
+    <Column sx={{ animation: 'fadeIn 1.5s ease-in-out both' }}>
       <Typography fontSize={48}>Delemangi</Typography>
-      <Typography fontSize={16}>Software Engineer @ <Link href="https://codechem.com" target="_blank">CodeChem</Link></Typography>
-      <Typography fontSize={16}>Computer Science Student @ <Link href="https://finki.ukim.mk" target="_blank">FCSE</Link></Typography>
+      <Typography fontSize={16}>
+        Software Engineer @{' '}
+        <Link
+          href="https://codechem.com"
+          target="_blank"
+        >
+          CodeChem
+        </Link>
+      </Typography>
+      <Typography fontSize={16}>
+        Computer Science Student @{' '}
+        <Link
+          href="https://finki.ukim.mk"
+          target="_blank"
+        >
+          FCSE
+        </Link>
+      </Typography>
     </Column>
   );
 };

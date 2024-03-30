@@ -1,13 +1,13 @@
-import { Container, styled } from "@mui/material";
+import { Container, styled } from '@mui/material';
 
 const RowContainer = styled(Container)({
-  width: "100%",
-  height: "33%",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  flexDirection: "row",
-  gap: "1.25rem"
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '1.25rem',
+  height: '33%',
+  justifyContent: 'center',
+  width: '100%',
 });
 
 export default RowContainer;

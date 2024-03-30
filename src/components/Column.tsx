@@ -1,10 +1,10 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 const Column = styled(Box)({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
 });
 
 export default Column;

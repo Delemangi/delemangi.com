@@ -1,21 +1,20 @@
-
-import { Popover, Tooltip, Typography } from "@mui/material";
-import { MouseEvent, useState } from "react";
-import { BiSolidEnvelope } from "react-icons/bi";
-import { SiDiscord, SiGithub, SiLinkedin, SiSteam } from "react-icons/si";
-import MediaButton from "./MediaButton";
-import RowContainer from "./RowContainer";
+import MediaButton from './MediaButton';
+import RowContainer from './RowContainer';
+import { Popover, Tooltip, Typography } from '@mui/material';
+import { type MouseEvent, useState } from 'react';
+import { BiSolidEnvelope } from 'react-icons/bi';
+import { SiDiscord, SiGithub, SiLinkedin, SiSteam } from 'react-icons/si';
 
 const Buttons = () => {
   const [anchorElement, setAnchorElement] = useState<HTMLElement>();
 
-  const handleDiscordOnClick = (event: MouseEvent<HTMLButtonElement>) => {
+  const handleDiscordOnClick = async (event: MouseEvent<HTMLButtonElement>) => {
     setAnchorElement(event.currentTarget);
-    navigator.clipboard.writeText("delemangi");
-  }
+    await navigator.clipboard.writeText('delemangi');
+  };
 
   return (
-    <RowContainer sx={{ animation: "fadeInMoveUp 1.5s ease-in-out both" }}>
+    <RowContainer sx={{ animation: 'fadeInMoveUp 1.5s ease-in-out both' }}>
       <Tooltip title="Mail">
         <MediaButton href="mailto:milev.stefan@gmail.com">
           <BiSolidEnvelope />
@@ -26,13 +25,13 @@ const Buttons = () => {
         <MediaButton onClick={handleDiscordOnClick}>
           <SiDiscord />
         </MediaButton>
-        </Tooltip>
+      </Tooltip>
       <Popover
-        open={Boolean(anchorElement)}
         anchorEl={anchorElement}
+        anchorOrigin={{ horizontal: 'center', vertical: 'bottom' }}
         onClose={() => setAnchorElement(undefined)}
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-        transformOrigin={{ vertical: "top", horizontal: "center" }}
+        open={Boolean(anchorElement)}
+        transformOrigin={{ horizontal: 'center', vertical: 'top' }}
       >
         <Typography margin={0.5}>Copied!</Typography>
       </Popover>
