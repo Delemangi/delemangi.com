@@ -1,5 +1,3 @@
-// eslint-disable-next-line import/no-unassigned-import
-import './style.css';
 import Background from './components/Background';
 import Bottom from './components/Bottom';
 import Buttons from './components/Buttons';
