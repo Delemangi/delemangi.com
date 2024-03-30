@@ -11,6 +11,7 @@ const Buttons = () => {
   const handleDiscordOnClick = async (event: MouseEvent<HTMLButtonElement>) => {
     setAnchorElement(event.currentTarget);
     await navigator.clipboard.writeText('delemangi');
+    setTimeout(() => setAnchorElement(undefined), 1_500);
   };
 
   return (
