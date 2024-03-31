@@ -1,3 +1,4 @@
+import Animations from './components/Animations';
 import Background from './components/Background';
 import Bottom from './components/Bottom';
 import Buttons from './components/Buttons';
@@ -12,6 +13,7 @@ import { Box, ThemeProvider } from '@mui/material';
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <Animations />
       <Background>
         <ColumnContainer
           sx={{
