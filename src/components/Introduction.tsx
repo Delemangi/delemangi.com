@@ -1,6 +1,7 @@
 import Age from './Age';
 import Column from './Column';
-import { Link, Typography } from '@mui/material';
+import UnderlinedLink from './UnderlinedLink';
+import { Typography } from '@mui/material';
 
 const Introduction = () => {
   return (
@@ -10,24 +11,24 @@ const Introduction = () => {
       <Age marginBottom={2} />
       <Typography fontSize={16}>
         Software Engineer @{' '}
-        <Link
+        <UnderlinedLink
           href="https://codechem.com"
           target="_blank"
         >
           CodeChem
-        </Link>
+        </UnderlinedLink>
       </Typography>
       <Typography
         fontSize={16}
         marginBottom={2}
       >
         Computer Science Student @{' '}
-        <Link
+        <UnderlinedLink
           href="https://finki.ukim.mk"
           target="_blank"
         >
           FCSE
-        </Link>
+        </UnderlinedLink>
       </Typography>
 
       <Typography fontSize={16}>Professional Code Monkey</Typography>

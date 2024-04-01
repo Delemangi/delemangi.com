@@ -1,6 +1,7 @@
 import RowContainer from './RowContainer';
+import UnderlinedLink from './UnderlinedLink';
 import { Copyright } from '@mui/icons-material';
-import { Link, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 const Footer = () => {
   return (
@@ -23,12 +24,12 @@ const Footer = () => {
         variant="body2"
       >
         Delemangi {new Date().getFullYear()}.{' '}
-        <Link
+        <UnderlinedLink
           href="https://github.com/Delemangi/delemangi.com"
           target="_blank"
         >
           Source code
-        </Link>{' '}
+        </UnderlinedLink>{' '}
         (MIT).
       </Typography>
     </RowContainer>
