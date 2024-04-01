@@ -3,7 +3,6 @@ import Background from './components/Background';
 import ColumnBox from './components/ColumnBox';
 import ColumnContainer from './components/ColumnContainer';
 import Description from './components/Description';
-import Footer from './components/Footer';
 import HorizontalDivider from './components/HorizontalDivider';
 import Introduction from './components/Introduction';
 import SocialMedia from './components/SocialMedia';
@@ -17,6 +16,7 @@ const App = () => {
       <Background>
         <ColumnContainer
           sx={{
+            height: '95%',
             margin: 'auto',
             maxWidth: '50%',
           }}
@@ -35,9 +35,6 @@ const App = () => {
             <Description />
           </Box>
         </ColumnContainer>
-        <Box>
-          <Footer />
-        </Box>
       </Background>
     </ThemeProvider>
   );

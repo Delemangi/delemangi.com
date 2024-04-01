@@ -5,7 +5,6 @@ const RowContainer = styled(Container)({
   display: 'flex',
   flexDirection: 'row',
   gap: '1.25rem',
-  height: '33%',
   justifyContent: 'center',
   width: '100%',
 });

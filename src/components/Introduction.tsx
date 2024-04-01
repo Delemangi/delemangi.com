@@ -1,12 +1,13 @@
 import Age from './Age';
 import Column from './Column';
+import Name from './Name';
 import UnderlinedLink from './UnderlinedLink';
 import { Typography } from '@mui/material';
 
 const Introduction = () => {
   return (
     <Column sx={{ animation: 'fadeIn 1.5s ease-in-out both' }}>
-      <Typography fontSize={48}>Delemangi</Typography>
+      <Name />
       <Typography fontSize={16}>Stefan Milev</Typography>
       <Age marginBottom={2} />
       <Typography fontSize={16}>

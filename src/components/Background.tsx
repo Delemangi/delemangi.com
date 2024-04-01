@@ -14,6 +14,8 @@ const Background = styled(Box)({
     'radial-gradient(ellipse, #4bad7c 25%, #4bada5 50%, #4b8bad 80%) center',
   height: '100%',
   left: 0,
+  overflowX: 'hidden',
+  overflowY: 'auto',
   position: 'fixed',
   top: 0,
   width: '100%',
