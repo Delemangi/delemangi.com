@@ -27,8 +27,8 @@ const Bottom = () => {
           target="_blank"
         >
           Source code
-        </Link>
-        . License: MIT.
+        </Link>{' '}
+        (MIT).
       </Typography>
     </RowContainer>
   );
