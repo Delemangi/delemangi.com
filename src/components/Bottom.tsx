@@ -19,6 +19,7 @@ const Bottom = () => {
       <Typography
         align="center"
         color="textSecondary"
+        fontSize={12}
         variant="body2"
       >
         Delemangi {new Date().getFullYear()}.{' '}
