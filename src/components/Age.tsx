@@ -15,6 +15,7 @@ type Props = TypographyProps;
 
 const Age = (props: Props) => {
   const [age, setAge] = useState(getAge());
+  const [hovering, setHovering] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => setAge(getAge()), 1_000);
@@ -24,9 +25,16 @@ const Age = (props: Props) => {
   return (
     <Typography
       fontSize={16}
+      sx={{
+        textDecoration: 'underline',
+        textDecorationStyle: 'dotted',
+        textUnderlineOffset: '0.2em',
+      }}
       {...props}
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
     >
-      {age} years old
+      {hovering ? age : Math.floor(Number(age))} years old
     </Typography>
   );
 };
