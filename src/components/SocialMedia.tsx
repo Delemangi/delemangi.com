@@ -5,7 +5,7 @@ import { type MouseEvent, useState } from 'react';
 import { BiSolidEnvelope } from 'react-icons/bi';
 import { SiDiscord, SiGithub, SiLinkedin, SiSteam } from 'react-icons/si';
 
-const Buttons = () => {
+const SocialMedia = () => {
   const [anchorElement, setAnchorElement] = useState<HTMLElement>();
 
   const handleDiscordOnClick = async (event: MouseEvent<HTMLButtonElement>) => {
@@ -58,4 +58,4 @@ const Buttons = () => {
   );
 };
 
-export default Buttons;
+export default SocialMedia;
