@@ -2,7 +2,7 @@ import RowContainer from './RowContainer';
 import { Copyright } from '@mui/icons-material';
 import { Link, Typography } from '@mui/material';
 
-const Bottom = () => {
+const Footer = () => {
   return (
     <RowContainer
       sx={{
@@ -35,4 +35,4 @@ const Bottom = () => {
   );
 };
 
-export default Bottom;
+export default Footer;

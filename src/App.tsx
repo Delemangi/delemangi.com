@@ -1,12 +1,12 @@
 import Animations from './components/Animations';
 import Background from './components/Background';
-import Bottom from './components/Bottom';
 import Buttons from './components/Buttons';
 import ColumnBox from './components/ColumnBox';
 import ColumnContainer from './components/ColumnContainer';
 import Description from './components/Description';
+import Footer from './components/Footer';
 import HorizontalDivider from './components/HorizontalDivider';
-import Intro from './components/Intro';
+import Introduction from './components/Introduction';
 import { theme } from './theme/theme';
 import { Box, ThemeProvider } from '@mui/material';
 
@@ -22,7 +22,7 @@ const App = () => {
           }}
         >
           <ColumnBox>
-            <Intro />
+            <Introduction />
             <Buttons />
             <HorizontalDivider />
           </ColumnBox>
@@ -31,7 +31,7 @@ const App = () => {
           </Box>
         </ColumnContainer>
         <Box>
-          <Bottom />
+          <Footer />
         </Box>
       </Background>
     </ThemeProvider>

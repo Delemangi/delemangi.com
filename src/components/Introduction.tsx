@@ -2,7 +2,7 @@ import Age from './Age';
 import Column from './Column';
 import { Link, Typography } from '@mui/material';
 
-const Intro = () => {
+const Introduction = () => {
   return (
     <Column sx={{ animation: 'fadeIn 1.5s ease-in-out both' }}>
       <Typography fontSize={48}>Delemangi</Typography>
@@ -35,4 +35,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Introduction;
