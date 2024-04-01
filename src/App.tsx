@@ -24,7 +24,12 @@ const App = () => {
           <ColumnBox>
             <Introduction />
             <SocialMedia />
-            <HorizontalDivider />
+            <HorizontalDivider
+              sx={{
+                margin: '20px 0',
+                marginLeft: '-10%',
+              }}
+            />
           </ColumnBox>
           <Box>
             <Description />

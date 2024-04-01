@@ -6,8 +6,6 @@ const HorizontalDivider = styled(Box)({
   backgroundImage:
     'linear-gradient(to right, rgba(0, 0, 0, 0), #2f2f2f, rgba(0, 0, 0, 0))',
   height: '2px',
-  margin: '20px 0',
-  marginLeft: '-10%',
   width: '120%',
 });
 
