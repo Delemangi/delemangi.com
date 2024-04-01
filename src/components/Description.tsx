@@ -5,9 +5,9 @@ const Description = () => {
   return (
     <DescriptionContainer>
       <Typography align="center">
-        I mostly make web apps, Discord bots and scrapers. I also occasionally
-        play some video games, mostly those within the survival or factory
-        genres.
+        In general, I mostly make different types of web apps and Discord bots
+        in my free time, as well as occasionally playing some video games,
+        mostly indie. You may check my social media links above.
       </Typography>
     </DescriptionContainer>
   );
