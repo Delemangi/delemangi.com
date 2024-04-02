@@ -5,7 +5,7 @@ import LinkedInIcon from '../icons/LinkedInIcon';
 import SteamIcon from '../icons/SteamIcon';
 import MediaButton from './MediaButton';
 import RowContainer from './RowContainer';
-import { Popover, Tooltip, Typography } from '@mui/material';
+import { Box, Popover, Tooltip, Typography } from '@mui/material';
 import { type MouseEvent, useState } from 'react';
 
 const SocialMedia = () => {
@@ -37,7 +37,16 @@ const SocialMedia = () => {
         open={Boolean(anchorElement)}
         transformOrigin={{ horizontal: 'center', vertical: 'top' }}
       >
-        <Typography margin={0.5}>Copied!</Typography>
+        <Box>
+          <Typography
+            padding={0.5}
+            sx={{
+              backgroundColor: '#80ffd3',
+            }}
+          >
+            Copied!
+          </Typography>
+        </Box>
       </Popover>
 
       <Tooltip title="GitHub">
