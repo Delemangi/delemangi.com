@@ -15,6 +15,7 @@ const MediaButton = forwardRef<HTMLButtonElement, Props>(
         sx={{
           '&:hover': {
             color: '#80ffd3',
+            transition: 'color 0.5s',
           },
           color: 'primary',
         }}
@@ -29,6 +30,7 @@ const MediaButton = forwardRef<HTMLButtonElement, Props>(
         sx={{
           '&:hover': {
             color: '#80ffd3',
+            transition: 'color 0.5s',
           },
           color: 'primary',
         }}
