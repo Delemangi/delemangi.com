@@ -2,18 +2,26 @@ import Animations from './components/Animations';
 import Background from './components/Background';
 import ColumnBox from './components/ColumnBox';
 import ColumnContainer from './components/ColumnContainer';
-import Description from './components/Description';
 import HorizontalDivider from './components/HorizontalDivider';
-import Introduction from './components/Introduction';
-import SocialMedia from './components/SocialMedia';
-import { theme } from './theme/theme';
-import { Box, ThemeProvider } from '@mui/material';
+import LoadingSpinner from './components/LoadingSpinner';
+import { Box } from '@mui/material';
+import { lazy, Suspense } from 'react';
+
+const LazyIntroduction = lazy(
+  async () => await import('./components/Introduction'),
+);
+const LazySocialMedia = lazy(
+  async () => await import('./components/SocialMedia'),
+);
+const LazyDescription = lazy(
+  async () => await import('./components/Description'),
+);
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <Background>
       <Animations />
-      <Background>
+      <Suspense fallback={<LoadingSpinner />}>
         <ColumnContainer
           sx={{
             height: '95%',
@@ -22,8 +30,8 @@ const App = () => {
           }}
         >
           <ColumnBox>
-            <Introduction />
-            <SocialMedia />
+            <LazyIntroduction />
+            <LazySocialMedia />
             <HorizontalDivider
               sx={{
                 margin: '20px 0',
@@ -32,11 +40,11 @@ const App = () => {
             />
           </ColumnBox>
           <Box>
-            <Description />
+            <LazyDescription />
           </Box>
         </ColumnContainer>
-      </Background>
-    </ThemeProvider>
+      </Suspense>
+    </Background>
   );
 };
 
