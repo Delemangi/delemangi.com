@@ -1,9 +1,12 @@
+import DiscordIcon from '../icons/DiscordIcon';
+import GitHubIcon from '../icons/GitHubIcon';
+import GMailIcon from '../icons/GMailIcon';
+import LinkedInIcon from '../icons/LinkedInIcon';
+import SteamIcon from '../icons/SteamIcon';
 import MediaButton from './MediaButton';
 import RowContainer from './RowContainer';
 import { Popover, Tooltip, Typography } from '@mui/material';
 import { type MouseEvent, useState } from 'react';
-import { BiSolidEnvelope } from 'react-icons/bi';
-import { SiDiscord, SiGithub, SiLinkedin, SiSteam } from 'react-icons/si';
 
 const SocialMedia = () => {
   const [anchorElement, setAnchorElement] = useState<HTMLElement>();
@@ -16,15 +19,15 @@ const SocialMedia = () => {
 
   return (
     <RowContainer sx={{ animation: 'fadeInMoveUp 1.5s ease-in-out both' }}>
-      <Tooltip title="Mail">
+      <Tooltip title="GMail">
         <MediaButton href="mailto:milev.stefan@gmail.com">
-          <BiSolidEnvelope />
+          <GMailIcon />
         </MediaButton>
       </Tooltip>
 
       <Tooltip title="Discord">
         <MediaButton onClick={handleDiscordOnClick}>
-          <SiDiscord />
+          <DiscordIcon />
         </MediaButton>
       </Tooltip>
       <Popover
@@ -39,19 +42,19 @@ const SocialMedia = () => {
 
       <Tooltip title="GitHub">
         <MediaButton href="https://github.com/Delemangi/">
-          <SiGithub />
+          <GitHubIcon />
         </MediaButton>
       </Tooltip>
 
       <Tooltip title="Steam">
         <MediaButton href="https://steamcommunity.com/id/delemangi/">
-          <SiSteam />
+          <SteamIcon />
         </MediaButton>
       </Tooltip>
 
       <Tooltip title="LinkedIn">
         <MediaButton href="https://www.linkedin.com/in/stefan-milev/">
-          <SiLinkedin />
+          <LinkedInIcon />
         </MediaButton>
       </Tooltip>
     </RowContainer>
