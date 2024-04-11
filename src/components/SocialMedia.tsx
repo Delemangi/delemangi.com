@@ -6,16 +6,19 @@ import SteamIcon from '../icons/SteamIcon';
 import MediaButton from './MediaButton';
 import RowContainer from './RowContainer';
 import { Box, Popover, Tooltip, Typography } from '@mui/material';
-import { type MouseEvent, useState } from 'react';
+import { type MouseEvent, useCallback, useState } from 'react';
 
 const SocialMedia = () => {
   const [anchorElement, setAnchorElement] = useState<HTMLElement>();
 
-  const handleDiscordOnClick = async (event: MouseEvent<HTMLButtonElement>) => {
-    setAnchorElement(event.currentTarget);
-    await navigator.clipboard.writeText('delemangi');
-    setTimeout(() => setAnchorElement(undefined), 1_500);
-  };
+  const handleDiscordOnClick = useCallback(
+    async (event: MouseEvent<HTMLButtonElement>) => {
+      setAnchorElement(event.currentTarget);
+      await navigator.clipboard.writeText('delemangi');
+      setTimeout(() => setAnchorElement(undefined), 1_500);
+    },
+    [],
+  );
 
   return (
     <RowContainer sx={{ animation: 'fadeInMoveUp 1.5s ease-in-out both' }}>
