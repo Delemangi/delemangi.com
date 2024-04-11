@@ -10,9 +10,11 @@ import { lazy, Suspense } from 'react';
 const LazyIntroduction = lazy(
   async () => await import('./components/Introduction'),
 );
+
 const LazySocialMedia = lazy(
   async () => await import('./components/SocialMedia'),
 );
+
 const LazyDescription = lazy(
   async () => await import('./components/Description'),
 );
