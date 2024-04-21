@@ -1,9 +1,9 @@
-version: '3.8'
+name: delemangi-home-dev
 
 services:
   app:
-    container_name: delemangi-home
-    image: delemangi-home
+    container_name: delemangi-home-dev
+    image: delemangi-home:latest
     build: .
     restart: unless-stopped
     ports:
