@@ -1,14 +1,7 @@
 {
-  "name": "delemangi.com",
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx",
-    "preview": "vite preview --host",
-    "prepare": "husky"
+  "author": "Delemangi",
+  "bugs": {
+    "url": "https://github.com/Delemangi/delemangi.com/issues"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -17,6 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "description": "Delemangi's personal website",
   "devDependencies": {
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
@@ -28,5 +22,25 @@
     "husky": "^9.0.11",
     "typescript": "^5.4.4",
     "vite": "^5.2.9"
-  }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "homepage": "https://github.com/Delemangi/delemangi.com",
+  "license": "MIT",
+  "main": "src/main.tsx",
+  "name": "delemangi.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Delemangi/delemangi.com.git"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "lint": "eslint . --ext ts,tsx",
+    "prepare": "husky",
+    "preview": "vite preview --host"
+  },
+  "type": "module",
+  "version": "1.0.0"
 }
