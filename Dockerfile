@@ -1,5 +1,5 @@
 # Build stage
-FROM --platform=${BUILDPLATFORM} node:20-alpine as build
+FROM --platform=${BUILDPLATFORM} node:20-alpine AS build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
@@ -9,7 +9,7 @@ COPY . ./
 RUN npm run build
 
 # Run stage
-FROM --platform=${TARGETPLATFORM} nginx:alpine as run
+FROM --platform=${TARGETPLATFORM} nginx:alpine AS run
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf /usr/share/nginx/html/*
