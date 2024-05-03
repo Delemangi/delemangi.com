@@ -37,6 +37,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
+    "format": "eslint . --ext ts,tsx --fix",
     "lint": "eslint . --ext ts,tsx",
     "prepare": "husky",
     "preview": "vite preview --host"
