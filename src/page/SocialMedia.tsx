@@ -1,10 +1,10 @@
+import MediaButton from '../components/MediaButton';
+import RowContainer from '../components/RowContainer';
 import DiscordIcon from '../icons/DiscordIcon';
 import GitHubIcon from '../icons/GitHubIcon';
 import GMailIcon from '../icons/GMailIcon';
 import LinkedInIcon from '../icons/LinkedInIcon';
 import SteamIcon from '../icons/SteamIcon';
-import MediaButton from './MediaButton';
-import RowContainer from './RowContainer';
 import { Box, Popover, Tooltip, Typography } from '@mui/material';
 import { type MouseEvent, useCallback, useState } from 'react';
 

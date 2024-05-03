@@ -1,4 +1,4 @@
-import DescriptionContainer from './DescriptionContainer';
+import DescriptionContainer from '../components/DescriptionContainer';
 import Discord from './Discord';
 import { Typography } from '@mui/material';
 

@@ -1,4 +1,4 @@
-import App from './App';
+import App from './page/App';
 import { theme } from './theme/theme';
 import { ThemeProvider } from '@mui/material';
 import { StrictMode } from 'react';

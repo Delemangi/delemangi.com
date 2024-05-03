@@ -1,4 +1,4 @@
-import UnderlinedLink from './UnderlinedLink';
+import UnderlinedLink from '../components/UnderlinedLink';
 import { Typography } from '@mui/material';
 
 const License = () => {

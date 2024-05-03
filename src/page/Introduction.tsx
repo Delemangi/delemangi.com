@@ -1,7 +1,7 @@
+import Column from '../components/Column';
+import UnderlinedLink from '../components/UnderlinedLink';
 import Age from './Age';
-import Column from './Column';
 import Name from './Name';
-import UnderlinedLink from './UnderlinedLink';
 import { Typography } from '@mui/material';
 
 const Introduction = () => {
