@@ -2,7 +2,7 @@ import { BIRTHDAY } from '../constants/birthday';
 import { Typography, type TypographyProps } from '@mui/material';
 import { useEffect, useState } from 'react';
 
-const getAge = (decimals = 8) => {
+const getAge = (decimals = 9) => {
   const birthDate = new Date(BIRTHDAY);
   const currentDate = new Date();
   const diff = currentDate.getTime() - birthDate.getTime();
