@@ -8,8 +8,12 @@ const Introduction = () => {
   return (
     <Column sx={{ animation: 'fadeIn 1.5s ease-in-out both' }}>
       <Name />
-      <Typography fontSize={16}>Stefan Milev</Typography>
-      <Age marginBottom={2} />
+      <Typography fontSize={14}>Stefan Milev</Typography>
+      <Typography fontSize={14}>Skopje, North Macedonia</Typography>
+      <Age
+        fontSize={14}
+        marginBottom={2}
+      />
       <Typography fontSize={16}>
         Software Engineer @{' '}
         <UnderlinedLink
