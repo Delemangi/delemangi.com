@@ -18,7 +18,7 @@
     "@typescript-eslint/parser": "^7.11.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
     "eslint": "^8.57.0",
-    "eslint-config-canonical": "^42.8.3",
+    "eslint-config-canonical": "42.8.2",
     "husky": "^9.0.11",
     "typescript": "^5.4.4",
     "vite": "^5.2.12"
@@ -38,7 +38,7 @@
     "build": "tsc && vite build",
     "dev": "vite",
     "format": "eslint . --ext ts,tsx --fix",
-    "lint": "eslint . --ext ts,tsx",
+    "lint": "tsc --noEmit && eslint . --ext ts,tsx",
     "prepare": "husky",
     "preview": "vite preview --host"
   },
