@@ -6,8 +6,9 @@ const Description = () => {
   return (
     <DescriptionContainer>
       <Typography align="center">
-        Welcome to my space. I spent my time playing various indie games and
-        creating Discord bots. I also run these Discord servers: <Discord />.
+        Welcome to my space. I usually spend my time playing various indie games
+        and creating Discord bots. You may find me on several Discord servers:{' '}
+        <Discord />.
       </Typography>
     </DescriptionContainer>
   );
