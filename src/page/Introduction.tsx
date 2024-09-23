@@ -27,7 +27,7 @@ const Introduction = () => {
         fontSize={16}
         marginBottom={2}
       >
-        Computer Science Student @{' '}
+        CS Master's Student @{' '}
         <UnderlinedLink
           href="https://finki.ukim.mk"
           target="_blank"
