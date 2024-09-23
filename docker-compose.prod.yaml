@@ -1,9 +1,8 @@
 name: delemangi-home
-
 services:
   app:
     container_name: delemangi-home
     image: delemangi/delemangi-home:latest
-    restart: unless-stopped
     ports:
       - 8088:8088
+    restart: unless-stopped

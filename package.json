@@ -6,22 +6,20 @@
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@mui/material": "^5.16.7",
-    "react": "^18.2.0",
+    "@mui/material": "^6.1.1",
+    "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "description": "Delemangi's personal website",
   "devDependencies": {
-    "@types/react": "^18.3.5",
+    "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-canonical": "42.8.2",
+    "eslint": "^9.11.1",
+    "eslint-config-canonical": "^44.3.0",
     "husky": "^9.1.6",
     "typescript": "^5.6.2",
-    "vite": "^5.4.4"
+    "vite": "^5.4.7"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -37,8 +35,8 @@
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
-    "format": "eslint . --ext ts,tsx --fix",
-    "lint": "tsc --noEmit && eslint . --ext ts,tsx",
+    "format": "eslint . --cache --fix",
+    "lint": "tsc --noEmit && eslint . --cache",
     "prepare": "husky",
     "preview": "vite preview --host"
   },
