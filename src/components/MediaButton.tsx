@@ -1,9 +1,9 @@
 import { IconButton, type IconButtonProps } from '@mui/material';
 import { forwardRef } from 'react';
 
-type Props = {
+type Props = IconButtonProps & {
   readonly href?: string;
-} & IconButtonProps;
+};
 
 const MediaButton = forwardRef<HTMLButtonElement, Props>(
   ({ children, href, ...props }: Props, ref) => {
