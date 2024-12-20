@@ -19,7 +19,7 @@
     "eslint-config-canonical": "^44.3.36",
     "husky": "^9.1.7",
     "typescript": "^5.7.2",
-    "vite": "^6.0.3"
+    "vite": "^6.0.5"
   },
   "engines": {
     "node": ">=20.0.0"
