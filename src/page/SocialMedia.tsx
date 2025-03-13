@@ -6,8 +6,8 @@ import MediaButton from '../components/MediaButton';
 import RowContainer from '../components/RowContainer';
 import DiscordIcon from '../icons/DiscordIcon';
 import GitHubIcon from '../icons/GitHubIcon';
-import GMailIcon from '../icons/GMailIcon';
 import LinkedInIcon from '../icons/LinkedInIcon';
+import MailIcon from '../icons/MailIcon';
 import SteamIcon from '../icons/SteamIcon';
 
 const SocialMedia = () => {
@@ -26,9 +26,9 @@ const SocialMedia = () => {
 
   return (
     <RowContainer sx={{ animation: 'fadeInMoveUp 1.5s ease-in-out both' }}>
-      <Tooltip title="GMail">
+      <Tooltip title="Mail">
         <MediaButton href="mailto:milev.stefan@gmail.com">
-          <GMailIcon />
+          <MailIcon />
         </MediaButton>
       </Tooltip>
 
