@@ -1,10 +1,12 @@
-import App from './page/App';
-import { theme } from './theme/theme';
 import { ThemeProvider } from '@mui/material';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-createRoot(document.querySelector('#root') as Element).render(
+import App from './page/App';
+import { theme } from './theme/theme';
+
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+createRoot(document.querySelector('#root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <App />

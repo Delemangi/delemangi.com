@@ -25,8 +25,6 @@ const keyFrames = css`
   }
 `;
 
-const Animations = () => {
-  return <Global styles={keyFrames} />;
-};
+const Animations = () => <Global styles={keyFrames} />;
 
 export default Animations;

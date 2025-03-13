@@ -1,6 +1,7 @@
-import { BIRTHDAY } from '../constants/birthday';
 import { Typography, type TypographyProps } from '@mui/material';
 import { useEffect, useState } from 'react';
+
+import { BIRTHDAY } from '../constants/birthday';
 
 const getAge = (decimals = 9) => {
   const birthDate = new Date(BIRTHDAY);
@@ -18,8 +19,12 @@ const Age = (props: Props) => {
   const [hovering, setHovering] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => setAge(getAge()), 1_000);
-    return () => clearInterval(interval);
+    const interval = setInterval(() => {
+      setAge(getAge());
+    }, 1_000);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -31,8 +36,12 @@ const Age = (props: Props) => {
         textUnderlineOffset: '0.2em',
       }}
       {...props}
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
+      onMouseEnter={() => {
+        setHovering(true);
+      }}
+      onMouseLeave={() => {
+        setHovering(false);
+      }}
     >
       {hovering ? age : Math.floor(Number(age))} years old
     </Typography>
