@@ -5,8 +5,8 @@ This is my personal homepage, which can be found [here](https://delemangi.com). 
 ## Quick Setup
 
 1. Install Docker
-2. Grab the `docker-compose.prod.yaml` file from the repository
-3. Run `docker compose up -d`
+2. Grab the `compose.prod.yaml` file from the repository
+3. Run `docker compose -f compose.prod.yaml up -d`
 
 ## Installation
 
