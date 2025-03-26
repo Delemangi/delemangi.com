@@ -22,7 +22,7 @@
     "vite": "^6.2.3"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": "^20 || ^22"
   },
   "homepage": "https://github.com/Delemangi/delemangi.com",
   "license": "MIT",
