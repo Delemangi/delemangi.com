@@ -1,6 +1,6 @@
 # Delemangi
 
-This is my personal homepage, which can be found [here](https://delemangi.com). It uses React and Material UI.
+This is my personal homepage, which can currently be found [here](https://delemangi.com). It uses React and Material UI.
 
 ## Quick Setup
 
@@ -10,7 +10,7 @@ This is my personal homepage, which can be found [here](https://delemangi.com). 
 
 ## Installation
 
-1. Clone the repository: `git clone git@github.com:Delemangi/delemangi.com.git` (or `https://github.com/Delemangi/delemangi.com.git`)
+1. Clone the repository: `git clone git@github.com:Delemangi/homepage.git` (or `https://github.com/Delemangi/homepage.git`)
 2. Install dependencies: `npm i`
 
 ## Running

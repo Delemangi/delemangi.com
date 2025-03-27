@@ -10,7 +10,7 @@ const License = () => (
     variant="body2"
   >
     <UnderlinedLink
-      href="https://github.com/Delemangi/delemangi.com"
+      href="https://github.com/Delemangi/homepage"
       target="_blank"
     >
       Source code

@@ -1,7 +1,7 @@
 {
   "author": "Delemangi",
   "bugs": {
-    "url": "https://github.com/Delemangi/delemangi.com/issues"
+    "url": "https://github.com/Delemangi/homepage/issues"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -24,13 +24,13 @@
   "engines": {
     "node": "^20 || ^22"
   },
-  "homepage": "https://github.com/Delemangi/delemangi.com",
+  "homepage": "https://github.com/Delemangi/homepage",
   "license": "MIT",
   "main": "src/main.tsx",
-  "name": "delemangi.com",
+  "name": "homepage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Delemangi/delemangi.com.git"
+    "url": "https://github.com/Delemangi/homepage.git"
   },
   "scripts": {
     "build": "tsc && vite build",
