@@ -15,7 +15,7 @@
   "files.eol": "\n",
   "sonarlint.connectedMode.project": {
     "connectionId": "delemangi",
-    "projectKey": "homepage"
+    "projectKey": "delemangi-homepage"
   },
   "typescript.format.insertSpaceAfterTypeAssertion": true,
   "typescript.suggest.autoImports": true,
