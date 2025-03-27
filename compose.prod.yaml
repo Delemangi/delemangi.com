@@ -2,7 +2,7 @@ name: delemangi-home
 services:
   app:
     container_name: delemangi-home
-    image: delemangi/delemangi-home:latest
+    image: ghcr.io/delemangi/homepage:latest
     ports:
       - 8088:8088
     restart: unless-stopped
